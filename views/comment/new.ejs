@@ -1,0 +1,16 @@
+<% include ../hf/header %>
+<div class="text-center display-3 mb-3" style="font-weight: 400">Add a Comment for <%= fcom.name %></div>
+<div style="width: 30%" class="mx-auto">
+        <form action="/campaign/<%= fcom._id %>/comment" method="POST">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="comment" name="com[text]">
+            </div>
+            <div class="form-group">
+                <button class="btn btn-primary btn-block">Add</button>
+            </div>
+        </form>
+        <div class="d-flex justify-content-center">
+            <a href="/campaign"><button class="btn btn-danger mx-auto">Go Back</button></a>
+        </div>
+</div>
+<% include ../hf/footer %>

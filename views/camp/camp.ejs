@@ -1,0 +1,27 @@
+<% include ../hf/header %>
+
+<div class="container">
+    <div class="jumbotron">
+        <div class="mr-2 ml-1">
+            <h1>WELCOME TO YELPCAMP!!!</h1>
+            <p>View our hand-picked camp-ground from all over the world</p>
+            <a href="/campaign/new"><button class="btn btn-info">Add New Camp</button></a>
+        </div>
+    </div>
+    <div class="row">
+        <% data.forEach(function(d) { %>    
+        <div class="col-lg-3 col-sm-6 col-12"">
+            <div class="card">
+                <img src="<%= d.image %>" class="card-img-top">
+                <div class="card-body">
+                   <h5 class="card-title text-center"><%= d.name %></h5>
+                   <div class="d-flex justify-content-center">
+                    <a href="/campaign/<%= d._id %>" class="btn btn-primary">More Info</a>
+                   </div>
+                </div>
+            </div>
+        </div>
+        <% }) %>
+    </div>
+</div>
+<% include ../hf/footer %>

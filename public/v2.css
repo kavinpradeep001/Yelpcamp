@@ -1,0 +1,27 @@
+@media (max-width: 767.98px) {
+    .jumbotron {
+        font-size: .9rem;
+    }
+    h1 {
+        font-size: 32px !important;
+    }
+}
+@media (max-width: 575.98px) {
+    .jumbotron {
+        font-size: .9rem;
+    }
+    h1 {
+        font-size: 29px !important;
+    }
+}
+.container {
+    max-width: 95%;
+}
+.card {
+    margin-bottom: 18px;
+}
+.navbar {
+    background: rgba(220, 220, 220, .5); 
+    padding: 0 16px !important; 
+    border-color: rgb(220, 220, 220);
+}
